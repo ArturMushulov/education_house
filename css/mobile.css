@@ -1,0 +1,330 @@
+@media (min-width:502px) {
+    main .container .menu input#menu_toggle, label {
+        display:none;
+    }
+}
+@media (max-width:1024px) {
+    .container {
+        width: 95%;
+        margin: 0 auto;
+    }
+    footer .bottom div{
+        flex-basis: 40%;
+    }
+}
+@media (max-width:980px){
+    .menu nav > ul li a {
+        font-size: 14px;
+    }
+    .menu form input {
+        width: 100px;
+    }
+    .container {
+            width: 90%;
+            margin: 0 auto;
+        }
+        .top_wrap .top {
+            width: 90%;
+        }
+        .top_wrap .top .description {
+            flex-basis: 60%;
+        }
+        .menu img {
+            display:none;
+        }
+        .middle .right .section1 {
+            flex-basis: 49%;
+            margin:0px;
+            padding-left: 5px;
+        }
+        .gallery {
+            flex-basis: 100%;
+        }
+        footer .bottom div{
+            margin: 10px;
+            padding: 15px;
+            flex-basis: 50%;
+        }
+        article img {
+            height: 50px;
+        }
+        footer nav ul li{
+            text-decoration: none;
+            list-style-type: none;
+            padding: 10px 20px 10px 20px;
+        }
+        .gallery .gallery_img img {
+            width: 100%;
+        }
+}
+@media (max-width:768px) {
+    .container {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+main .container .middle {
+    display: block;
+}
+main .container .middle .left {
+    width: 100%;
+}
+main .container .middle article:hover{
+    background:rgba(0, 0,0, 0.5);
+    color: white;
+}
+.news_bottom {
+    position: relative;
+    height: 200px;
+    background: url(/дз2/images/aside.jpg) no-repeat left center/cover;
+}
+main .container .middle section {
+    display: flex;
+    flex-basis: 100%;
+    margin:0;
+}
+main .container .middle article {
+    flex-basis: 100%;
+    margin:0;
+    padding: 5px;
+    
+}
+main .container .middle article p{
+    font-size: 12px;
+}
+.top_wrap .top {
+    width: 95%;
+}
+.top_wrap .top .description {
+    flex-basis: 70%;
+    font-size: 12px;
+}
+.menu nav > ul li {
+    padding: 0 10px 0 0;
+}
+.menu nav > ul li a {
+    font-size: 11px;
+}
+.menu img {
+    display:none;
+}
+.middle .right {
+    display: flex;
+    width: 100%;
+}
+.middle .right .section1 {
+    flex-basis: 30%;
+    margin: 10px;
+    padding: 0;
+
+}
+.gallery {
+    flex-basis: 100%;
+}
+footer .bottom div{
+    margin: 10px;
+    padding: 15px;
+    flex-basis: 50%;
+}
+article img {
+    height: 50px;
+}
+.gallery .gallery_img img {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+footer nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+}
+footer nav ul li{
+    text-decoration: none;
+    list-style-type: none;
+    padding: 10px 15px 10px 15px;
+    position: relative;
+    right:20px;
+
+}
+
+@media (max-width:600px) {
+    .top_wrap .top .logo {
+        height: 45px;
+        display: flex;
+        justify-content: center;
+    }
+    .news_title p {
+        font-size: 16px;
+    }
+    article p{
+        font-size: 12px;
+    }
+    .menu nav ul li a{
+        font-size: 14px;
+    }
+    .menu nav  {
+        display: flex;
+        flex-basis: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .middle .right .section1 {
+        flex-basis: 45%;
+    }
+    .middle .right .section1 .text p:first-child {
+        font-weight: bold;
+        color:rgba(0, 0,0, 0.7);
+        font-size: 14px;
+    }
+    
+    .middle .right .section1 .text p:last-child {
+        color:rgba(0, 0,0, 0.5);
+        font-size: 12px;
+    }
+.gallery h2{
+    margin-left: 30px;
+}
+footer nav ul {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+footer nav ul li {
+    left: 0px;
+    padding-left: 15px;
+    flex-basis: 100%;
+    font-size: 14px;
+}
+.menu {
+    flex-wrap: wrap;
+    
+}
+.menu form input {
+    width: 500px;
+    align-items: center;
+}
+footer .bottom div{
+    margin: 10px;
+    padding: 15px;
+    flex-basis: 100%;
+    background:rgba(168, 165, 165, 0.664);
+}
+footer .bottom {
+    background: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+footer .bottom div a{
+    color: white;
+    display: block;
+    margin: 5px;   
+    padding-left: 10%; 
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 14px;
+}
+}
+@media (max-width:502px) {
+    .top_wrap .top {
+        height: 20vh;
+        flex-direction: column;
+    }
+    .top_wrap .top .logo {
+        height: 10vh;
+    }
+    .menu nav {
+        position: fixed;
+        height: 100vh;
+        width: 100vw;
+        left:0;
+        top: 0;
+        z-index: 5;
+        background: rgba(0, 0,0, 0.9);
+        margin-top: -100vh;
+        transition: 0.5s;
+        backdrop-filter: blur(5px);
+    }
+    .menu nav > ul {
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 80vh;
+        width: 100%;
+    }
+    .menu nav > ul li{
+        flex-basis: 50%;
+    }
+    .menu nav > ul li:hover {
+        background:rgba(0, 0,0, 0.5);
+    }
+    .menu nav > ul li a{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        color: white;
+    }
+    .menu nav > ul li:hover .submenu {
+        display: none;
+    }
+    .menu form input {
+        width: 80vw;
+        margin-left: 10px;
+    }
+    .menu form button {
+        display: none;
+    }
+    .menu form {
+        margin: 10px;
+    }
+    .menu input[type="checkbox"] {
+        display: none;
+    }
+    .menu label {
+        position: fixed;
+        right: 25px;
+        top: 25px;
+        font-size: 30px;
+        z-index: 10;
+        color: white;
+        cursor: pointer;
+    }
+    .menu input[type="checkbox"]:checked ~ nav {
+        margin-top:0;
+    }
+    .menu input[type="checkbox"]:checked ~ form {
+        z-index: 5;
+        width: 100px;
+        bottom: 10px;
+        position: fixed;
+        transition: 1s;
+    }
+    footer nav {
+        display: none;
+    }
+    .middle .left section {
+        flex-direction: column;
+        padding: 0;
+    }
+    .middle .left section:hover {
+        cursor:pointer;
+    }
+    .banner .slider p {
+        font-size: 12px;
+    }
+    .middle .left section article {
+        padding: 0;
+    }
+    .middle .left section article p {
+        font-size: 16px;
+    }
+    article img {
+        border-radius:100%;
+        height: 50px;
+    }
+}
+}
